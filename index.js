@@ -1,26 +1,26 @@
-//Build the deck
+//Arrays for building de deck and global variables
 var valueCard = [2, 3, 4, 5, 6, 7, 8, 9, 10, "A", "J", "Q", "K"];
 var typeCard = ["C", "D", "H", "S"];
 var cardDeck = [];
 var valueCards = 0;
 var k = 0;
 
+//constructor 
 function Card(nameCard, valueCard, imageCard){
     this.nameCard = nameCard;
     this.valueCard = valueCard; 
     this.imageCard = imageCard;
 }
 
+//building the deck, and making a connection between the images and the array cardDeck
 for(let i = 0; i<valueCard.length; i++){
     for(let j = 0; j<typeCard.length; j++){
-        //cardDeck[k] = valueCard[i] + typeCard[j];
         cardDeck[k] = new Card(valueCard[i] + typeCard[j], valueCard[i], valueCard[i] + typeCard[j] + ".png");
         k++;
     }
 }
 
-//var cardDeckCopy = cardDeck.slice();
-
+//Function to check if the player have won or lost
 function checkWinner(value){
     if(value > 21){
         document.getElementById("sum").innerHTML = "You lost!!!";
@@ -35,6 +35,7 @@ function checkWinner(value){
     
 }
 
+//Function to show the card to the user and update text and image
 function showCard(){
     
     let seed = Math.floor(Math.random()*52);    
@@ -44,6 +45,7 @@ function showCard(){
     checkWinner(sum);    
 }
 
+//Function that check card values and sum the values
 function sumCards(value){
     if(typeof(value) == "number"){
         valueCards += value;
@@ -57,6 +59,7 @@ function sumCards(value){
     return valueCards;
 }
 
+//Function to start a new game
 function newGame(){
     valueCards = 0;
     document.getElementById("openCards").src = "images/yellow_back.png";
