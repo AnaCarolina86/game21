@@ -27,7 +27,7 @@ function checkWinner(value){
         document.getElementById("give").innerHTML = "Press New Game";
     }
     else if(value == 21){
-        document.getElementById("sum").innerHTML = value + "You won!!!";
+        document.getElementById("sum").innerHTML = value + " You won!!!";
     }
     else {
         document.getElementById("give").innerHTML = "Give me one more";
@@ -61,6 +61,7 @@ function newGame(){
     valueCards = 0;
     document.getElementById("openCards").src = "images/yellow_back.png";
     document.getElementById("sum").innerHTML = "Let's play";
+    document.getElementById("give").innerHTML = "Give me One Card";
 }
 
 // Handling with the bottons

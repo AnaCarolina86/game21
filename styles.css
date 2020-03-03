@@ -9,7 +9,7 @@ h1{
 }
 
 p{
-
+    font-family: 'Oswald', sans-serif;
 }
 
 img{
@@ -22,6 +22,10 @@ main{
 }
 
 /* Classes from Game */
+
+.btn{
+    font-family: 'Oswald', sans-serif;
+}
 
 .top-game, .bottom-game{
     padding: 15px 15px;
@@ -43,7 +47,7 @@ main{
 footer{
     background-color: aliceblue;
     color: darkred;
-    font-family: monospace;
+    font-family: 'Oswald', monospace, sans-serif;
     padding: 10px 5px;
     text-align: center;
 }
