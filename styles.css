@@ -6,10 +6,12 @@ h1{
     font-weight: 700;
     padding: 20px 60px;
     text-align: center;
+    text-shadow: 4px 4px 5px darkred;
 }
 
 p{
     font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 1px 4px gray;
 }
 
 img{
@@ -25,6 +27,7 @@ main{
 
 .btn{
     font-family: 'Oswald', sans-serif;
+    font-size: larger;
 }
 
 .top-game, .bottom-game{
