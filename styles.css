@@ -23,11 +23,35 @@ main{
     
 }
 
-/* Classes from Game */
+/* Classes and Id from Game */
+
+.title{
+    overflow: hidden;
+    animation-duration: 3s;
+    animation-name: slideing;
+}
+
+@keyframes slideing {
+    from {
+      margin-right: 100%;
+      width: 300%;
+    }    
+}
 
 .btn{
+    background-color: rgb(216, 214, 214);    
     font-family: 'Oswald', sans-serif;
     font-size: larger;
+}
+
+.btn:hover {
+    background-color: rgb(248, 243, 243);
+    box-shadow: aliceblue 0px 0px 1px 3px;
+    font-weight: 900;
+}
+
+.btn:active{
+    transform: translateY(5px);
 }
 
 .top-game, .bottom-game{
@@ -36,6 +60,7 @@ main{
 }
 
 .stop, .give, .new-game{
+    color: rgb(46, 38, 38);
     margin: 15px 15px;
     width: 50%;
 }
@@ -53,4 +78,9 @@ footer{
     font-family: 'Oswald', monospace, sans-serif;
     padding: 10px 5px;
     text-align: center;
+    padding: 0;
+}
+
+.footer{
+    margin: 5px 5px;
 }
